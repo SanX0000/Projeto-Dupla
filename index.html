@@ -21,7 +21,10 @@
             </p>
             <p>Data do evento:</p>
             <p class="event-date">Domingo, 4 de Dezembro, a partir das 14h</p>
-            <form>
+        </div>
+        <div id="subscription-form">
+            <p>Preencha o formulário para receber os detalhes do evento</p>
+            <form id="formulario" method="post" action="">
                 <div class="form-group">
                     <label for="name">Nome</label>
                         <input 
@@ -34,18 +37,24 @@
                 <div class="form-group">
                     <label for="email">E-mail</label>
                         <input 
-                        type="email" 
+                        type="email"
+                        id="email" 
                         name="email" 
                         placeholder="Digite seu melhor e-mail"
+                        data-tipo="email"
+                        pattern="[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?"
                         required
                         />
                 </div>
                 <div class="form-group">
                     <label for="phone">Telefone</label>
                         <input 
-                        type="text" 
+                        type="text"
+                        id="phone" 
                         name="phone" 
                         placeholder="Número de Whatsapp"
+                        pattern="\(?[0-9]{2}\)?\s?9[0-9]{4}-[0-9]{4}"
+                        maxlength="15"
                         required
                         />
                 </div>
@@ -61,11 +70,92 @@
                 </div>
                 <input type="submit" class="btn" value="Quero me inscrever">
             </form>
-
-        </div>
-        <div id="subscription-form">
-            <p>Preencha o formulário para receber os detalhes do evento</p>
         </div>
     </header>
-</body>
+    <section id="key-benefits">
+        <h2>O que você vai aprender: </h2>
+        <div class="benefits">
+            <div class="benefit">
+                <div id="benefit-1" class="benefit-img"></div>
+                    <p>
+                        Alguma coisa muito legal, que vai fazer a diferença na vida do participante.
+                    </p>
+            </div>
+            <div class="benefit">
+                <div id="benefit-2" class="benefit-img"></div>
+                    <p>
+                        Alguma coisa muito legal, que vai fazer a diferença na vida do participante.
+                    </p>
+            </div>
+            <div class="benefit">
+                <div id="benefit-3" class="benefit-img"></div>
+                    <p>
+                        Alguma coisa muito legal, que vai fazer a diferença na vida do participante.
+                    </p>
+            </div>            
+        </div>
+    </section>
+    <section id="location">
+        <div id="address">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div id="address-details">
+                <p>Rua do evento, 1333</p>
+                <p>Bairro tal</p>
+                <p>Abertura: 14h</p>
+            </div>
+        </div>
+        <div id="about-location">
+            <h3>Local de destaque</h3>
+            <p>
+                O evento será realizado em um local prestigiado pelos amantes de Design de Interiores, onde teremos exemplos de vários ambientes, tanto internos como externos. 
+            </p>
+
+        </div>
+    </section>
+    <section id="details">
+        <div class="detail" id="detail-1">
+          <img src="assets/img/hrz-3.jpg" alt="Sala de jantar decorada em tons claros" />
+          <div class="detail-description">
+            <h3>Conheça os ambientes que você vai aprender a decorar</h3>
+          </div>
+        </div>
+        <div class="detail" id="detail-2">
+          <div class="detail-description">
+            <h3>Detalhes</h3>
+            <ul>
+              <li>Posicionamento</li>
+              <li>Aproveitamento de espaço</li>
+              <li>Combinação de cores</li>
+              <li>Organização</li>
+              <li>E muito mais...</li>
+            </ul>
+          </div>
+          <img src="assets/img/hrz-4.jpg" alt="Sala de jantar decorada" />
+        </div>
+        <div class="detail" id="detail-3">
+          <img src="assets/img/hrz-5.jpg" alt="Sala decorada em tons escuros" />
+          <div class="detail-description">
+            <h3>Objetos</h3>
+            <ul>
+              <li>Cadeiras</li>
+              <li>Mesas</li>
+              <li>Espelhos</li>
+              <li>Plantas</li>
+              <li>Cortinas</li>
+              <li>E muito mais...</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    <section id="cta">
+        <h3>Gostou? Então se inscreva:</h3>
+        <button class="btn">Solicitar inscrição</button>
+    </section>
+    <footer id="footer">
+        <h3>InDecor</h3>
+        <p>A evolução da decoração de interiores</p>
+        <p><span>Entre em contato:</span> oi@indecor.com.br</p>
+        <p><span>Ou pelo telefone:</span> (55) 99999-9999</p>
+    </footer>
+   </body>
 </html>

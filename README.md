@@ -1,6 +1,6 @@
 <h1 align="center">Projeto Landing Page</h1> <br>
 
-<p>Quinto projeto da Mentoria Conquiste sua Vaga entregue num prazo de 10 dias, realizado em dupla por Lílian Rangel e Santiago Barreto <br>
+<p>Quinto projeto da Mentoria Conquiste sua Vaga entregue num prazo de 10 dias, realizado em dupla por Santiago Barreto e Lílian Rangel<br>
 
 O objetivo era vivenciarmos o dia a dia mais realista de um desenvolvedor ao trabalhar com mais pessoas num projeto.<br>
 </p>
